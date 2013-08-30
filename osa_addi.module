@@ -147,7 +147,7 @@ function osa_addi_create_object_request_xml($object, $uuid, $settings = array(),
   $docbook_qandaset->appendChild($docbook_qandadiv);
   $docbook_section->appendChild($docbook_qandaset);
   $docbook_article->appendChild($docbook_section);
-  
+
   // Add docbook:article to the ns1:object.
   $ns_object->appendChild($docbook_article);
   // Add ns1:object to the create object action.
@@ -168,7 +168,7 @@ function _osa_addi_soap_create_object_ns() {
     'dc' => 'http://purl.org/dc/elements/1.1/',
     'dkabm' => 'http://biblstandard.dk/abm/namespace/dkabm/',
     'dcmitype' => 'http://purl.org/dc/dcmitype/',
-    'dcterms' => 'ttp://purl.org/dc/terms/',
+    'dcterms' => 'http://purl.org/dc/terms/',
     'ac' => 'http://biblstandard.dk/ac/namespace/',
     'dkdcplus' => 'http://biblstandard.dk/abm/namespace/dkdcplus/',
     'docbook' => 'http://docbook.org/ns/docbook',
